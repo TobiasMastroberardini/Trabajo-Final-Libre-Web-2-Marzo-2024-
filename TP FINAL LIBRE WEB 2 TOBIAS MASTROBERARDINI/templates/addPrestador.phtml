@@ -1,0 +1,32 @@
+<?php require_once './templates/header.phtml' ?>
+
+<form method='POST' action='add-new-prestador'>
+  <div class="form-group">
+    <label for="nombrePrestador">Nombre</label>
+    <input type="text" class="form-control" id="nombrePrestador" name='nombrePrestador' placeholder="Nombre del prestador">
+  </div>
+  <div class="form-group">
+    <label for="fechaFundacion">Fecha de fundacion</label>
+    <input type="date" class="form-control" id="fechaFundacion" name='fechaFundacion' placeholder="Fecha de creación">
+  </div>
+  <div class="form-group">
+    <label for="entidad">entidad</label>
+    <input type="text" class="form-control" id="entidad" name='entidad' placeholder="entidad">
+  </div>
+  <div class="form-group">
+    <label for="opinion">Opinion del prestador</label>
+    <textarea class="form-control" id="opinion" name='opinion' placeholder="Opinion del prestador"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="logo">Logo</label>
+    <input type="text" class="form-control" id="logo" name='logo' placeholder="Inserte el logo del prestador">
+  </div>
+  <button type="submit" class="btn btn-primary">Agregar</button>
+  <?php if ($message != null) : ?>
+    <div>
+      <p><?= $message ?></p>
+    </div>
+  <?php endif ?>
+</form>
+
+<?php require_once './templates/footer.phtml' ?>

@@ -1,0 +1,21 @@
+<?php require './templates/header.phtml' ?>
+<div class="contenedor-prestador">
+    <h1 class='titulo-seguro'><?= $prestador->nombrePrestador ?></h1>
+    <div class="contenedor-logo-prestador">
+        <img class="logo-prestador" src="<?= $prestador->logo ?>">
+    </div>
+    <p class="fecha-prestador">
+        Fecha de lanzamiento: <?= $prestador->fechaCreacion ?>
+    </p>
+    <h2>Opiniones</h2>
+    <?php if (!empty($opiniones)) : ?>
+        <ul>
+            <?php foreach ($opiniones as $opinion) : ?>
+                <li><?= $opinion->opinion ?></li>
+            <?php endforeach ?>
+        </ul>
+    <?php else : ?>
+        <p>No hay opiniones disponibles.</p>
+    <?php endif ?>
+</div>
+<?php require './templates/footer.phtml' ?>

@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(33, 33, 116);
+}
+
+main {
+    background-color: rgb(33, 33, 116);
+}
+
+.table td {
+    background-color: rgba(0, 0, 0, 0.236);
+}
+
+.table th {
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+footer {
+    border-top: 1px black solid !important;
+}
+
+.titulo-seguro,
+.titulo-error {
+    color: white;
+}
+
+.detalles-seguros,
+.detalles-prestadores {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.detalles-seguros {
+    justify-content: space-between;
+}
+
+.detalles-prestadores {
+    justify-content: end;
+}
+
+.form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    color: white;
+}
+
+.login-failed {
+    color: white;
+}
+
+.listed-seguro-title {
+    text-decoration: none;
+    color: rgb(208, 208, 49);
+}
+
+.contenedor-seguro {
+    margin: 30px 100px;
+    padding: 20px;
+    background-color: rgb(6, 6, 93);
+    border-radius: 10px;
+}
+
+.titulo-seguro {
+    color: rgb(223, 222, 222);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.descripcion-seguro,
+.prestador-seguro {
+    color: rgb(200, 200, 200);
+    margin: 15px 100px;
+}
